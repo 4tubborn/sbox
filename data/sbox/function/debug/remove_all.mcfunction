@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:marker,tag=sbox.root] run function #sbox:remove

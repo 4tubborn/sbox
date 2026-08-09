@@ -1,0 +1,16 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "sbox:update/has_interaction"
+        },
+        {
+            "condition": "inverted",
+            "term": {
+                "condition": "reference",
+                "name": "sbox:update/has_box"
+            }
+        }
+    ]
+}

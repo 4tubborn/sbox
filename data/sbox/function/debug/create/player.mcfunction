@@ -1,0 +1,1 @@
+function #sbox:create_inline {with:{shape:[[-0.3, 0.0, -0.3, 0.3, 1.8, 0.3]]}}

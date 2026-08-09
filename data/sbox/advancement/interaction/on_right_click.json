@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "1": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": {"Tags": ["sbox.interaction"]}
+                }
+            }
+        }
+    },
+    "requirements": [["1"]],
+    "rewards": {"function": "sbox:internal/interaction/on_right_click"}
+}

@@ -1,0 +1,1 @@
+$execute positioned ~$(x) ~$(y) ~$(z) positioned ~$(offset) ~-0.0001 ~$(offset) run function sbox:internal/create/interaction/

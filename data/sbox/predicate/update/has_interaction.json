@@ -1,0 +1,12 @@
+{
+    "condition": "value_check",
+    "value": {
+        "type": "score",
+        "score": "sbox.tmp",
+        "target": {
+            "type": "fixed",
+            "name": "#has_interaction"
+        }
+    },
+    "range": 1
+}

@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "0": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "shulker",
+                    "nbt": {"Tags": ["sbox.unit_box"]}
+                }
+            }
+        },
+        "1": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": {"Tags": ["sbox.interaction"]}
+                }
+            }
+        }
+    },
+    "requirements": [["0","1"]],
+    "rewards": {"function": "sbox:internal/interaction/on_left_click"}
+}

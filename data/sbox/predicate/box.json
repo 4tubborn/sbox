@@ -1,0 +1,8 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type": "text_display",
+        "nbt": {"Tags": ["sbox.unit_root"]}
+    }
+}

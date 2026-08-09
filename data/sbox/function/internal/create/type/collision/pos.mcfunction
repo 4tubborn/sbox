@@ -1,0 +1,1 @@
+$execute positioned ~$(x) ~$(y) ~$(z) positioned ~$(offset) ~ ~$(offset) run function sbox:internal/create/summon/
