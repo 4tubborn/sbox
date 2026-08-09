@@ -1,4 +1,4 @@
-# Solid Collision Box
+# Custom Collision Box
 
 A simple Minecraft datapack library that allows creating custom collision/interaction boxes with basic management.
 
