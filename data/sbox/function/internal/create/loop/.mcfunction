@@ -10,7 +10,7 @@ execute store result score #max_x sbox.create run data get storage sbox:re creat
 execute store result score #max_y sbox.create run data get storage sbox:re create.cur_shape[4] 10000
 execute store result score #max_z sbox.create run data get storage sbox:re create.cur_shape[5] 10000
 
-tellraw @a ["",\
+#tellraw @a ["",\
   {"text":"[DEBUG] AABB Bounds: ","color":"aqua","bold":true},\
   {"text":"Min(","color":"gray"},\
   {"score":{"name":"#min_x","objective":"sbox.create"},"color":"red"},\

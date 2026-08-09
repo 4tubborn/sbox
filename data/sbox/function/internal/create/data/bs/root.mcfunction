@@ -8,7 +8,6 @@ tag @s remove sbox.link.parent
 #execute if entity @e[type=text_display,tag=sbox.unit_root,distance=..32] run say 1
 
 #function #bs.link:as_children {run:"say kids"}
-say root
 #run as root
 function #sbox:init/root
 #run as text displays/interaction

@@ -13,6 +13,6 @@ data modify storage sbox:in create.root set value false
 
 execute unless data storage sbox:in update.type unless data storage sbox:in {update:{mode:"replace"}} run function sbox:internal/update/shape/type
 
-tellraw @a ["storage: ",{storage:"sbox:in",nbt:"create"}]
+#tellraw @a ["storage: ",{storage:"sbox:in",nbt:"create"}]
 
 execute at @s run function sbox:internal/create/

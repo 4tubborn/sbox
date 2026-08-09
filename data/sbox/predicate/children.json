@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "sbox:box"
+            "name": "sbox:unit_root"
         },
         {
             "condition": "reference",

@@ -1,4 +1,4 @@
-tellraw @a ["",\
+#tellraw @a ["",\
   {"text":"[DEBUG] Extents: ","color":"yellow","bold":true},\
   {"text":"dX=","color":"gray"},\
   {"score":{"name":"#extent.x","objective":"sbox.create"},"color":"red"},\
@@ -13,7 +13,7 @@ tellraw @a ["",\
 
 function sbox:internal/create/cal/count
 
-tellraw @a ["",\
+#tellraw @a ["",\
   {"text":"[DEBUG] Subdivisions (Ceil Counts): ","color":"gold","bold":true},\
   {"text":"X=","color":"gray"},\
   {"score":{"name":"#count.x","objective":"sbox.create"},"color":"red","bold":true},\
@@ -27,7 +27,7 @@ function sbox:internal/create/cal/step
 
 execute store result storage sbox:macro create.scale double 0.0001 run scoreboard players get #min_extent sbox.create
 
-tellraw @a ["[DEBUG] Stor: ",{storage:"sbox:macro",nbt:"create"}]
+#tellraw @a ["[DEBUG] Stor: ",{storage:"sbox:macro",nbt:"create"}]
 
 execute store result storage sbox:macro create.pos.offset double 0.00005 run scoreboard players get #min_extent sbox.create
 data modify storage sbox:macro create.pos.x set from storage sbox:re create.cur_shape[0]
