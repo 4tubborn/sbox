@@ -4,7 +4,7 @@ A simple Minecraft datapack library that allows creating custom collision/intera
 
 ## Features
 
-* **Creation**: Create a collision box or a interaction box.
+* **Creation**: Create a collision box or an interaction box.
 * **Management**: Update and remove boxes.
 
 ## Dependencies
