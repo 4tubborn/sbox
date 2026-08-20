@@ -9,11 +9,11 @@ A simple Minecraft datapack library that allows creating custom collision/intera
 
 ## Dependencies
 
-Some features of the datapack depend on Bookshelf Modules.
+Install the following dependencies:
 
 ### Data Packs
 
-* (optional) [Bookshelf Link](https://modrinth.com/datapack/bookshelf-link)
+* (optional) [Bookshelf Link](https://modrinth.com/datapack/bookshelf-link). If not installed, some features are unavaliable.
 
 ## Development
 
