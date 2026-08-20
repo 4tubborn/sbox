@@ -1,24 +1,17 @@
 {
   "pack": {
     "description": "",
-    "min_format": 47,
+    "min_format": 57,
     "max_format": 114514,
-    "pack_format": 47,
-    "supported_formats": [47,114514]
+    "pack_format": 57,
+    "supported_formats": [57,114514]
   },
   "overlays": {
     "entries": [
       {
         "directory": "since_26.2",
-        "formats": [107,114514],
         "min_format": 107,
         "max_format": 114514
-      },
-      {
-        "directory": "until_1.21.2",
-        "formats": [47,48],
-        "min_format": 47,
-        "max_format": 48
       }
     ]
   }

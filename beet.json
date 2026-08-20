@@ -7,10 +7,10 @@
     "load": ["."]
   },
   "pipeline": [
+    "py_scripts.include_files",
     "beet.contrib.minify_function",
     "beet.contrib.minify_json",
-    "beet.contrib.render",
-    "py_scripts.include_files"
+    "beet.contrib.render"
   ],
   "meta": {
     "version": "v0.1.3"
