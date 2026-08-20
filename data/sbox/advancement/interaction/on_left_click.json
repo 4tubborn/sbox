@@ -3,19 +3,19 @@
         "0": {
             "trigger": "player_hurt_entity",
             "conditions": {
-                "entity": {
-                    "type": "shulker",
-                    "nbt": {"Tags": ["sbox.unit_box"]}
-                }
+                "entity": [{
+                    "condition": "reference",
+                    "name": "sbox:unit_box"
+                }]
             }
         },
         "1": {
             "trigger": "player_hurt_entity",
             "conditions": {
-                "entity": {
-                    "type": "interaction",
-                    "nbt": {"Tags": ["sbox.interaction"]}
-                }
+                "entity": [{
+                    "condition": "reference",
+                    "name": "sbox:interaction"
+                }]
             }
         }
     },

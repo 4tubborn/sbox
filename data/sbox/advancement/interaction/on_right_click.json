@@ -3,10 +3,10 @@
         "1": {
             "trigger": "player_interacted_with_entity",
             "conditions": {
-                "entity": {
-                    "type": "interaction",
-                    "nbt": {"Tags": ["sbox.interaction"]}
-                }
+                "entity": [{
+                    "condition": "reference",
+                    "name": "sbox:unit_box"
+                }]
             }
         }
     },
