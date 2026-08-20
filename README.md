@@ -9,7 +9,7 @@ A simple Minecraft datapack library that allows creating custom collision/intera
 
 ## Dependencies
 
-Some features of the datapack depend on Bookshelf Modules. Please install the following optional dependencies:
+Some features of the datapack depend on Bookshelf Modules.
 
 ### Data Packs
 

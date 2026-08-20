@@ -1,0 +1,19 @@
+{
+  "author": "4tubborn",
+  "description": "Custom Collision Box.",
+  "data_pack": {
+    "zipped": true,
+    "name": "Custom Collision Box {{ version }}",
+    "load": ["."]
+  },
+  "pipeline": [
+    "beet.contrib.minify_function",
+    "beet.contrib.minify_json",
+    "beet.contrib.render",
+    "py_scripts.include_files"
+  ],
+  "meta": {
+    "version": "v0.1.3"
+  },
+  "output": "build"
+}

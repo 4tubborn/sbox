@@ -1,2 +1,5 @@
 *.zip
 /sbox.wiki/
+/.beet_cache/
+/build/
+**/__pycache__/
