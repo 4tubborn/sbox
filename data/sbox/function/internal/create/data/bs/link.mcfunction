@@ -10,3 +10,5 @@ tag @s remove bs.link.this
 function #bs.link:update_link
 #===
 tag @s remove sbox.init.children
+#remove init (if not a unit root/interaction, the command will do nothing anyway)
+tag @s remove sbox.init

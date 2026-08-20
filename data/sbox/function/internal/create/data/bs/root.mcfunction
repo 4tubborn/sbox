@@ -12,7 +12,7 @@ tag @s remove sbox.link.parent
 function #sbox:init/root
 #run as text displays/interaction
 function #bs.link:as_children {run:"execute as @s[predicate=sbox:children] run function #sbox:init/boxes"}
-
-function sbox:internal/create/data/bs/id
+#remove init (if not a new root, the command will do nothing anyway)
+tag @s remove sbox.init
 
 return 1
