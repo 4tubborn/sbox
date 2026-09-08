@@ -10,6 +10,11 @@ execute store result score #max_x sbox.create run data get storage sbox:re creat
 execute store result score #max_y sbox.create run data get storage sbox:re create.cur_shape[4] 10000
 execute store result score #max_z sbox.create run data get storage sbox:re create.cur_shape[5] 10000
 
+# extent 恒为正数,如果 min > max 则swap
+execute if score #max_x sbox.create < #min_x sbox.create run scoreboard players operation #max_x sbox.create >< #min_x sbox.create
+execute if score #max_y sbox.create < #min_y sbox.create run scoreboard players operation #max_y sbox.create >< #min_y sbox.create
+execute if score #max_z sbox.create < #min_z sbox.create run scoreboard players operation #max_z sbox.create >< #min_z sbox.create
+
 #tellraw @a ["",\
   {"text":"[DEBUG] AABB Bounds: ","color":"aqua","bold":true},\
   {"text":"Min(","color":"gray"},\
