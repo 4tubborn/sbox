@@ -13,8 +13,7 @@ execute store result storage sbox:macro create.width double 0.0001 run scoreboar
 execute store result storage sbox:macro create.height double 0.0001 run scoreboard players get #height sbox.create
 
 execute store result storage sbox:macro create.pos.offset double 0.00005 run scoreboard players get #min_xz sbox.create
-data modify storage sbox:macro create.pos.x set from storage sbox:re create.cur_shape[0]
-data modify storage sbox:macro create.pos.y set from storage sbox:re create.cur_shape[1]
-data modify storage sbox:macro create.pos.z set from storage sbox:re create.cur_shape[2]
+
+function sbox:internal/create/cal/pos/_
 
 function sbox:internal/create/type/interaction/pos with storage sbox:macro create.pos

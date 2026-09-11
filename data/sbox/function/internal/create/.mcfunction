@@ -2,6 +2,7 @@
 data modify storage sbox:re create set value {shape:[],offset:{x:0,y:0,z:0},root:true,type:"collision"}
 data modify storage sbox:re create merge from storage sbox:in create
 #pixel:<bool>
+scoreboard players set #pixel sbox.create 0
 execute store result score #pixel sbox.create run data get storage sbox:re create.pixel
 #pixel to percent
 execute if score #pixel sbox.create matches 1 run function sbox:internal/create/cal/shape/offset
