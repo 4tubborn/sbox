@@ -6,6 +6,7 @@ from beet import Context, BinaryFile
 def beet_default(ctx: Context):
     root = Path(ctx.directory)
 
+    '''
     # Include .mcfunction files anywhere under data/
     for path in root.rglob(".mcfunction"):
         if not path.is_file():
@@ -19,6 +20,7 @@ def beet_default(ctx: Context):
         ctx.data.extra[relative.as_posix()] = BinaryFile(
             source_path=path
         )
+    '''
 
     # Include everything under the root mcdoc/ directory
     mcdoc_root = root / "mcdoc"

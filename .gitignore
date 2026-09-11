@@ -3,6 +3,6 @@
 /.beet_cache/
 /build/
 **/__pycache__/
-/spyglass.json
 /.vscode/
 /spyglass.json
+/.venv/
