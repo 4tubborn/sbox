@@ -2,13 +2,8 @@ data remove storage sbox:re create.cur_shape
 data modify storage sbox:re create.cur_shape set from storage sbox:re create.shape[0]
 execute unless data storage sbox:re create.cur_shape run return 1
 data remove storage sbox:re create.shape[0]
-
-execute store result score #min_x sbox.create run data get storage sbox:re create.cur_shape[0] 10000
-execute store result score #min_y sbox.create run data get storage sbox:re create.cur_shape[1] 10000
-execute store result score #min_z sbox.create run data get storage sbox:re create.cur_shape[2] 10000
-execute store result score #max_x sbox.create run data get storage sbox:re create.cur_shape[3] 10000
-execute store result score #max_y sbox.create run data get storage sbox:re create.cur_shape[4] 10000
-execute store result score #max_z sbox.create run data get storage sbox:re create.cur_shape[5] 10000
+#pixel or percent
+function sbox:internal/create/cal/shape/_
 
 # extent 恒为正数,如果 min > max 则swap
 execute if score #max_x sbox.create < #min_x sbox.create run scoreboard players operation #max_x sbox.create >< #min_x sbox.create
