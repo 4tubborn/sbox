@@ -1,0 +1,1 @@
+execute store result score #max_step sbox.create run data get storage sbox:re create.max_step 625

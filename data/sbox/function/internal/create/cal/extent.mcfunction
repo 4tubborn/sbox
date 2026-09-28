@@ -1,3 +1,4 @@
+#step size
 scoreboard players operation #extent.x sbox.create = #max_x sbox.create
 scoreboard players operation #extent.x sbox.create -= #min_x sbox.create
 
@@ -17,8 +18,3 @@ execute if score #extent.y sbox.create matches 320001.. run scoreboard players s
 # Z
 execute if score #extent.z sbox.create matches ..624 run scoreboard players set #extent.z sbox.create 625
 execute if score #extent.z sbox.create matches 320001.. run scoreboard players set #extent.z sbox.create 320000
-
-scoreboard players operation #min_extent sbox.create = #extent.x sbox.create
-execute if score #extent.y sbox.create < #min_extent sbox.create run scoreboard players operation #min_extent sbox.create = #extent.y sbox.create
-execute if score #extent.z sbox.create < #min_extent sbox.create run scoreboard players operation #min_extent sbox.create = #extent.z sbox.create
-execute if score #min_extent sbox.create matches 30001.. run scoreboard players set #min_extent sbox.create 30000

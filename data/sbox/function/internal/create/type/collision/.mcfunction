@@ -10,7 +10,7 @@
   {"text":"Min Extent: ","color":"gold","bold":true},\
   {"score":{"name":"#min_extent","objective":"sbox.create"},"color":"aqua","bold":true}\
 ]
-
+function sbox:internal/create/cal/min_extent
 function sbox:internal/create/cal/count
 
 #tellraw @a ["",\
