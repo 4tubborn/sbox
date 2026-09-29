@@ -1,0 +1,7 @@
+{
+    "type": "any_of",
+    "terms": [
+        "sbox:unit_root",
+        "sbox:interaction"
+    ]
+}

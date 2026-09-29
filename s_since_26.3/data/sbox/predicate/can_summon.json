@@ -1,0 +1,91 @@
+{
+    "type": "any_of",
+    "terms": [
+        {
+            "type": "int_value_check",
+            "value": {
+                "type": "score",
+                "score": "sbox.create",
+                "target": {
+                    "type": "fixed",
+                    "name": "#hollow"
+                }
+            },
+            "test": 0
+        },
+        {
+            "type": "inverted",
+            "term": {
+                "type": "all_of",
+                "terms": [
+                    {
+                        "type": "int_value_check",
+                        "value": {
+                            "type": "score",
+                            "score": "sbox.tmp",
+                            "target": {
+                                "type": "fixed",
+                                "name": "#count.x"
+                            }
+                        },
+                        "test": {
+                            "min": 2,
+                            "max": {
+                                "type": "score",
+                                "score": "sbox.create",
+                                "target": {
+                                    "type": "fixed",
+                                    "name": "#max_count.x"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "value": {
+                            "type": "score",
+                            "score": "sbox.tmp",
+                            "target": {
+                                "type": "fixed",
+                                "name": "#count.y"
+                            }
+                        },
+                        "test": {
+                            "min": 2,
+                            "max": {
+                                "type": "score",
+                                "score": "sbox.create",
+                                "target": {
+                                    "type": "fixed",
+                                    "name": "#max_count.y"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "value": {
+                            "type": "score",
+                            "score": "sbox.tmp",
+                            "target": {
+                                "type": "fixed",
+                                "name": "#count.z"
+                            }
+                        },
+                        "test": {
+                            "min": 2,
+                            "max": {
+                                "type": "score",
+                                "score": "sbox.create",
+                                "target": {
+                                    "type": "fixed",
+                                    "name": "#max_count.z"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

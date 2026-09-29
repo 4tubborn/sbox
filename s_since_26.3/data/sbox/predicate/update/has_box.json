@@ -1,0 +1,12 @@
+{
+    "type": "int_value_check",
+    "value": {
+        "type": "score",
+        "score": "sbox.tmp",
+        "target": {
+            "type": "fixed",
+            "name": "#has_box"
+        }
+    },
+    "test": 1
+}

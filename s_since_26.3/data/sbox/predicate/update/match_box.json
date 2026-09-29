@@ -1,0 +1,10 @@
+{
+    "type": "all_of",
+    "terms": [
+        "sbox:update/has_box",
+        {
+            "type": "inverted",
+            "term": "sbox:update/has_interaction"
+        }
+    ]
+}

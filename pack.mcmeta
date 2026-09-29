@@ -9,8 +9,13 @@
   "overlays": {
     "entries": [
       {
-        "directory": "since_26.2",
+        "directory": "s_only_26.2",
         "min_format": 107,
+        "max_format": 107
+      },
+      {
+        "directory": "s_since_26.3",
+        "min_format": 121,
         "max_format": 114514
       }
     ]

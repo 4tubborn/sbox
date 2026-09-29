@@ -1,0 +1,7 @@
+{
+    "type": "all_of",
+    "terms": [
+        "sbox:update/has_box",
+        "sbox:update/has_interaction"
+    ]
+}

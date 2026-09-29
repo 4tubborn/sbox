@@ -1,6 +1,6 @@
 #input: sbox:in {create:{shape:[[min_x, min_y, min_z, max_x, max_y, max_z]],offset"{x:<float>,y:<offset>,z:<float>},type:"collision"/"interaction"/"both"},pixel:<bool>,hollow:<bool>,max_step:<float>}
 data remove storage sbox:re create
-data modify storage sbox:re create set value {shape:[],offset:{x:0,y:0,z:0},root:true,type:"collision",pixel:false,hollow:true,max_step:3.0f,update:false}
+data modify storage sbox:re create set value {shape:[],offset:{x:0,y:0,z:0},root:true,type:"collision",pixel:false,hollow:true,update:false}
 data modify storage sbox:re create merge from storage sbox:in create
 #pixel:<bool>
 scoreboard players set #pixel sbox.create 0
