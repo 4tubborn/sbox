@@ -2,6 +2,8 @@
 data remove storage sbox:re create
 data modify storage sbox:re create set value {shape:[],offset:{x:0,y:0,z:0},root:true,type:"collision",pixel:false,hollow:true,update:false}
 data modify storage sbox:re create merge from storage sbox:in create
+#rm input
+data remove storage sbox:in create
 #pixel:<bool>
 scoreboard players set #pixel sbox.create 0
 execute store result score #pixel sbox.create run data get storage sbox:re create.pixel
@@ -14,7 +16,6 @@ execute if score #pixel sbox.create matches 1 run function sbox:internal/create/
 function sbox:internal/create/cal/max_step/_
 
 #tellraw @a {score:{name:"#max_step",objective:"sbox.create"}}
-
 #hollow
 scoreboard players set #hollow sbox.create 1
 execute store result score #hollow sbox.create run data get storage sbox:re create.hollow

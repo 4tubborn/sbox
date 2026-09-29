@@ -3,10 +3,7 @@
         "1": {
             "trigger": "player_interacted_with_entity",
             "conditions": {
-                "entity": [{
-                    "condition": "reference",
-                    "name": "sbox:interaction"
-                }]
+                "entity": "sbox:interaction"
             }
         }
     },

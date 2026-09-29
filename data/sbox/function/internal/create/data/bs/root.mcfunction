@@ -7,10 +7,6 @@ tag @s remove sbox.link.parent
 
 #tag @s add sbox.link.parent
 
-#execute as @e[tag=sbox.init.children,distance=..32] \
-    at @n[tag=sbox.link.parent,distance=..32] \
-    run function #bs.link:create_link_ata
-
 #say has link
 #tag @e[tag=sbox.init.children] remove sbox.init.children
 #tag @s remove sbox.link.parent
