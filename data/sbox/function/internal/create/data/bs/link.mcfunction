@@ -1,4 +1,6 @@
-#Based on bs.link
+# Based on #bs.link:create_link_ata.
+
+# inappropriate; improper; out of place; unseemlines
 #===
 tag @s add bs.link.this
 execute as @n[tag=!bs.link.this,tag=sbox.link.parent,distance=..0.1] unless predicate bs.id:has_suid run function #bs.id:give_suid

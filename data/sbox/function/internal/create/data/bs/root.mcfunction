@@ -1,8 +1,20 @@
 #Executor: root
 #Create link, also for tag=sbox.init.children
+
 tag @s add sbox.link.parent
 execute as @e[tag=sbox.init.children,distance=..32] run function sbox:internal/create/data/bs/link
 tag @s remove sbox.link.parent
+
+#tag @s add sbox.link.parent
+
+#execute as @e[tag=sbox.init.children,distance=..32] \
+    at @n[tag=sbox.link.parent,distance=..32] \
+    run function #bs.link:create_link_ata
+
+#say has link
+#tag @e[tag=sbox.init.children] remove sbox.init.children
+#tag @s remove sbox.link.parent
+
 #execute as @e[type=text_display,tag=sbox.init,distance=..32] if entity @n[type=marker] run say 1
 
 #execute if entity @e[type=text_display,tag=sbox.unit_root,distance=..32] run say 1

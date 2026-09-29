@@ -3,13 +3,14 @@
 #其他children不影响，只删除box/interaction
 scoreboard players set #has_box sbox.tmp 0
 scoreboard players set #has_interaction sbox.tmp 0
-function #bs.link:as_children {run:"execute as @s[predicate=sbox:children] run function sbox:internal/update/shape/_"}
+#api trigger
+function #sbox:event/on_update
 
-function #bs.link:remove_link
+function #bs.link:as_children {run:"execute as @s[predicate=sbox:children] run function sbox:internal/update/shape/_"}
 
 data remove storage sbox:in create
 data modify storage sbox:in create merge from storage sbox:in update
-data modify storage sbox:in create.root set value false
+data modify storage sbox:in create merge value {root: false, update: true}
 
 execute unless data storage sbox:in update.type unless data storage sbox:in {update:{mode:"replace"}} run function sbox:internal/update/shape/type
 
