@@ -22,7 +22,7 @@ execute store result score #hollow sbox.create run data get storage sbox:re crea
 
 function sbox:internal/create/offset with storage sbox:re create.offset
 
-execute unless data storage sbox:re {create:{root:false}} run summon marker ~ ~ ~ {Tags:["sbox.root","sbox.init"]}
+execute unless data storage sbox:re {create:{root:false}} run summon marker ~ ~ ~ {Tags:["sbox.root","sbox.init","sbox.entity"]}
 
 function #sbox:event/on_create
 

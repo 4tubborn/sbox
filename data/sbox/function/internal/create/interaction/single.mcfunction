@@ -1,1 +1,1 @@
-$summon interaction ~ ~ ~ {Tags:["sbox.interaction","sbox.init","sbox.init.children"],width:$(width),height:$(height)}
+$summon interaction ~ ~ ~ {Tags:["sbox.interaction","sbox.init","sbox.init.children","sbox.entity"],width:$(width),height:$(height)}

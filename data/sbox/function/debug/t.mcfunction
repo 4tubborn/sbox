@@ -1,1 +1,0 @@
-function #sbox:create_inline {with:{shape: [[0.0f, 0.0f, 0.0f, 2.0f, 2.0f, 2.0f]],type:"both",max_step:0.25,}}

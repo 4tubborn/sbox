@@ -1,4 +1,4 @@
-execute unless data storage sbox:re max_step run return run scoreboard players set #max_step sbox.create 30000
+execute unless data storage sbox:re create.max_step run return run scoreboard players set #max_step sbox.create 30000
 #pixel to percent
 execute if score #pixel sbox.create matches 1 run return run function sbox:internal/create/cal/max_step/pixel
 function sbox:internal/create/cal/max_step/percent
